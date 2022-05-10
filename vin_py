@@ -1,0 +1,18 @@
+a=10
+def a1():
+    print('inside outer function')
+    b=30
+    def b1():
+        print('inside inner function')
+        c=40
+        def c1():
+            print('inside another inner function')
+            d=45
+            print(d)
+            print(c)
+            print(b)
+            print(a)
+        c1()
+    b1()
+a1()
+print(a)
